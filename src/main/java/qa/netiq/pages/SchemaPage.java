@@ -27,6 +27,7 @@ public class SchemaPage extends BaseTest{
 	}
 	
 	public SchemaPage schemaPageUrl() {
+		page.waitForURL("https://10.71.36.143:9000/identityconsole/#/schemamanagement");
 		String actualUrl=page.url();
 		System.out.println(actualUrl);
 		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/#/schemamanagement");
