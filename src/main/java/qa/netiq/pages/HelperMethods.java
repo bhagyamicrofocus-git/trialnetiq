@@ -7,7 +7,12 @@ import com.microsoft.playwright.Page;
 public class HelperMethods {
 	Page page;
 	static String homeLoc = "button[title=\"Cancel\"]";
-
+	
+	public static String getPageUrl(String path) {
+		String pageUrl = String.format("https://10.71.36.143:9000/identityconsole/#/%s",path);
+		return pageUrl;
+	}
+	
 	public static void validation(String actual, String Desired, String msg) {
 		assertEquals(actual, Desired, msg);
 	}
