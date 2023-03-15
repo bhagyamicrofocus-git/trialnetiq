@@ -30,6 +30,11 @@
     <version>7.0.0-beta3</version>
     <scope>test</scope>
 </dependency>
+  	<dependency>
+  		<groupId>Playwright</groupId>
+  		<artifactId>Playwright</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
   </dependencies>
 
   <build>

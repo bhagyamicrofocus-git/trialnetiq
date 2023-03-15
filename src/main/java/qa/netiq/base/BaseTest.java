@@ -2,8 +2,8 @@ package qa.netiq.base;
 
 import java.util.Properties;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
@@ -17,7 +17,7 @@ public class BaseTest extends PlaywrightFactory {
 //	protected SchemaPage schemaPage;
 	Properties prop;
 	
-	@BeforeClass
+	@BeforeSuite
 	public void beforeClassSetUp() {
 //		new PlaywrightFactory()
 		launch();
@@ -35,7 +35,7 @@ public class BaseTest extends PlaywrightFactory {
 	}
 
 
-    @AfterClass
+    @AfterSuite
     public void logout() throws InterruptedException {
     	Thread.sleep(2000);
 		page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("admin (idconsole-tree) ")).click();
