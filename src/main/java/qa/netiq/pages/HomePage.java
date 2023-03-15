@@ -1,37 +1,27 @@
 package qa.netiq.pages;
 
-import org.testng.Assert;
-
 import com.microsoft.playwright.Page;
 
-import qa.netiq.base.BaseTest;
-public  class HomePage extends BaseTest {
-	 //private Page page;
+public class HomePage {
+	private Page page;
+	private String expectedUrl = "https://10.71.36.143:9000/identityconsole/";
+	private String headerLoc = "div[class=\"ias-tile-group\"] span";
+	private String expectedHeader = "eDirectory";
 
-	//constructor
-	public HomePage(Page page)
-	{
-	  	this.page=page;
+	public HomePage(Page page) {
+		this.page = page;
+		page.waitForURL(expectedUrl);
 	}
-	
-	//actions
-	public HomePage homePageTitle() {
-	   String actualTitle= page.title();
-	   Assert.assertEquals(actualTitle, "Identity Console");
-	   return this;
-	}
-	
-	public HomePage homePageUrl() {
-		String actualUrl=page.url();
-		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/");
+
+	public HomePage headerVal() {
+		String headerTxt = HelperMethods.headerOpr(page, headerLoc);
+		HelperMethods.validation(headerTxt, expectedHeader, "header not matched");
 		return this;
 	}
-	
-	public void headerHome() {
-		String header=page.textContent("div[class=\"ias-tile-group\"] span");
-		System.out.println(header);
-		Assert.assertEquals(header,"eDirectory");
-	}
-	
-}
 
+	public HomePage urlVal() {
+		String actualUrl = HelperMethods.urlOpr(page);
+		HelperMethods.validation(actualUrl, expectedUrl, "url not matched");
+		return this;
+	}
+}

@@ -1,4 +1,4 @@
-package pages;
+package qa.netiq.pages;
 
 import com.microsoft.playwright.Page;
 

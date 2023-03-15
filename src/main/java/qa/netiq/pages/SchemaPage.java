@@ -5,6 +5,7 @@ import org.testng.Assert;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import qa.netiq.base.BaseTest;
+import qa.netiq.factory.PlaywrightFactory;
 
 public class SchemaPage extends BaseTest{
 	//private Page page;
@@ -13,6 +14,7 @@ public class SchemaPage extends BaseTest{
 	public SchemaPage(Page page) throws InterruptedException
 	{
 		this.page=page;
+		page.click(HelperMethods.homeLoc);
 	  	page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Schema Management Create, Delete classes and attributes and extend objects")).click();
 	  	page.waitForURL("https://10.71.36.143:9000/identityconsole/#/schemamanagement");
 	}
