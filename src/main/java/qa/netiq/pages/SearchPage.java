@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 public class SearchPage {
 	private Page page;
 	private String pageLoc = "a[routerlink=\"searchpage\"]";
-	String expectedUrl = HelperMethods.getPageUrl("searchpage");
+	String expectedUrl = HelperMethods.getPageUrl("/#/searchpage");
 	String headerLoc = "div[class=\"titleSection wordWrap_search\"] h2";
 	private String expectedHeader = "Search";
 
