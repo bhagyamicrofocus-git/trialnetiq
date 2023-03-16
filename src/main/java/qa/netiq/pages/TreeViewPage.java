@@ -4,9 +4,9 @@ import com.microsoft.playwright.Page;
 
 public class TreeViewPage {
 	private Page page;
-	String pageLoc = "a[routerlink=\"treeview\"]";
-	String expectedUrl = "https://10.71.36.143:9000/identityconsole/#/treeview";
-	String headerLoc = "div[class=\"treeViewHeading wordWrap\"] h2";
+	private String pageLoc = "a[routerlink=\"treeview\"]";
+	private String expectedUrl = HelperMethods.getPageUrl("#/treeview");
+	private String headerLoc = "div[class=\"treeViewHeading wordWrap\"] h2";
 	private String expectedHeader = "Tree View";
 
 	public TreeViewPage(Page page) {
