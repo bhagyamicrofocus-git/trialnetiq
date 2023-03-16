@@ -19,6 +19,7 @@ public class EncryptedReplication extends BaseTest {
 		this.page=page;
 		page.click(HelperMethods.homeLoc);
 		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
+		page.waitForURL(pageurl);
 		
 	}
 	public EncryptedReplication encryptedReplicationPageTitle() throws InterruptedException {

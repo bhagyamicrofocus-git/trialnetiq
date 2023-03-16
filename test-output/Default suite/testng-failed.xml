@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeClassSetUp"/>
           <include name="logout"/>
-          <include name="dnManagementPageTest"/>
+          <include name="encryptedReplicationPageTest"/>
         </methods>
       </class> <!-- qa.netiq.tests.PageTest2 -->
     </classes>

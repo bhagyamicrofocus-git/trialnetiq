@@ -7,24 +7,29 @@ import com.microsoft.playwright.options.AriaRole;
 
 public class IndexManagementPage {
 	private Page page;
+	private String tile = "Index Management Create, Modify and Change State of Index";
+	private String headerLoc= "div[class=\"pageHeading\"] h2";
+	private String pageurl=HelperMethods.getPageUrl("#/indexmanagement");
+	private String expectedheader= "Index";
 
 	public IndexManagementPage(Page page) {
 		this.page = page;
 //		page.navigate("https://10.71.36.143:9000/identityconsole/#/");
-		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Index Management Create, Modify and Change State of Index")).click();
+		page.click(HelperMethods.homeLoc);
+		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
 	}
 
 	public void indexManagementPage() {
-		String header = page.textContent("div[class=\"pageHeading\"] h2");
+		String header = page.textContent(headerLoc);
 		System.out.println(header);
 //		System.out.println(page.title());
-		HelperMethods.validation(header, "Index", "header not matched");
+		HelperMethods.validation(header,expectedheader , "header not matched");
 	}
 	public IndexManagementPage indexManagementPageUrl() {
-		page.waitForURL("https://10.71.36.143:9000/identityconsole/#/indexmanagement");
+		page.waitForURL(pageurl);
 		String actualUrl=page.url();
 		System.out.println(actualUrl);
-		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/#/indexmanagement");
+		Assert.assertEquals(actualUrl,pageurl);
 		return this;
 	}
 }
