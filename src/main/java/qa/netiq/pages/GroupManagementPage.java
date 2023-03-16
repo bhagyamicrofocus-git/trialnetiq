@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 public class GroupManagementPage {
 	private Page page;
 	private String pageLoc = "a[routerlink=\"grouppage\"]";
-	private String expectedUrl = "https://10.71.36.143:9000/identityconsole/#/grouppage";
+	private String expectedUrl = HelperMethods.getPageUrl("#/grouppage");
 	private String headerLoc = "div[class=\"pageHeading wordWrap_heading\"] h2";
 	private String expectedHeader = "Groups";
 	

@@ -4,7 +4,7 @@ import com.microsoft.playwright.Page;
 
 public class HomePage {
 	private Page page;
-	private String expectedUrl = "https://10.71.36.143:9000/identityconsole/";
+	private String expectedUrl = HelperMethods.getPageUrl("");
 	private String headerLoc = "div[class=\"ias-tile-group\"] span";
 	private String expectedHeader = "eDirectory";
 

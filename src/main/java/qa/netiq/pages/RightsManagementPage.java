@@ -4,9 +4,9 @@ import com.microsoft.playwright.Page;
 
 public class RightsManagementPage {
 	private Page page;
-	String pageLoc = "a[routerlink=\"rightsmanagement\"]";
-	String expectedUrl = "https://10.71.36.143:9000/identityconsole/#/rightsmanagement";
-	String headerLoc = "div[class=\"pageHeading wordWrap\"] h2";
+	private String pageLoc = "a[routerlink=\"rightsmanagement\"]";
+	private String expectedUrl = HelperMethods.getPageUrl("#/rightsmanagement");
+	private String headerLoc = "div[class=\"pageHeading wordWrap\"] h2";
 	private String expectedHeader = "Rights Management";
 
 	public RightsManagementPage(Page page) {
