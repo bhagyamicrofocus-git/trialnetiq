@@ -6,7 +6,7 @@ public class UserManagementPage {
 	private Page page;
 	private String pageLoc = "a[routerlink=\"userpage\"]";
 	private String headerLoc = "div[class=\"floatLeft wordWrap_heading\"] h2";
-	private String expectedUrl = "https://10.71.36.143:9000/identityconsole/#/userpage";
+	private String expectedUrl = HelperMethods.getPageUrl("#/userpage");
 	private String expectedHeader = "Users";
 
 	public UserManagementPage(Page page) {

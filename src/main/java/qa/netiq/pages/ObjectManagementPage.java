@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 public class ObjectManagementPage {
 	private Page page;
 	private String pageLoc = "a[routerlink=\"objectpage\"]";
-	private String expectedUrl = "https://10.71.36.143:9000/identityconsole/#/objectpage";
+	private String expectedUrl = HelperMethods.getPageUrl("#/objectpage");
 	private String headerLoc = "div[class=\"floatLeft wordWrap_heading\"] h2";
 	private String expectedHeader = "Objects";
 
