@@ -15,7 +15,6 @@ public class LDAPConfigurationPage {
 
 	public LDAPConfigurationPage(Page page) {
 		this.page = page;
-//		page.navigate("https://10.71.36.143:9000/identityconsole/#/");
 		page.click(HelperMethods.homeLoc);
 		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
 	}

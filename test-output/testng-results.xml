@@ -1,99 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="21" passed="19" failed="0" skipped="0">
+<testng-results ignored="4" total="23" passed="19" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-16T11:56:56 IST" name="Default suite" finished-at="2023-03-16T11:57:11 IST" duration-ms="15398">
+  <suite started-at="2023-03-16T12:40:18 IST" name="Netiq" finished-at="2023-03-16T12:40:32 IST" duration-ms="14180">
     <groups>
     </groups>
-    <test started-at="2023-03-16T11:56:56 IST" name="Default test" finished-at="2023-03-16T11:57:11 IST" duration-ms="15398">
+    <test started-at="2023-03-16T12:40:18 IST" name="tiles" finished-at="2023-03-16T12:40:32 IST" duration-ms="14180">
+      <class name="qa.netiq.tests.PageTest3">
+        <test-method signature="IndexManagementTest()[pri:1, instance:qa.netiq.tests.PageTest3@3e92efc3]" started-at="2023-03-16T12:40:29 IST" name="IndexManagementTest" finished-at="2023-03-16T12:40:30 IST" duration-ms="449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IndexManagementTest -->
+        <test-method signature="LDAPConfigurationTest()[pri:2, instance:qa.netiq.tests.PageTest3@3e92efc3]" started-at="2023-03-16T12:40:30 IST" name="LDAPConfigurationTest" finished-at="2023-03-16T12:40:30 IST" duration-ms="825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LDAPConfigurationTest -->
+        <test-method signature="CertificateManagementTest()[pri:3, instance:qa.netiq.tests.PageTest3@3e92efc3]" started-at="2023-03-16T12:40:30 IST" name="CertificateManagementTest" finished-at="2023-03-16T12:40:31 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CertificateManagementTest -->
+        <test-method signature="AuthenticationManagementTest()[pri:4, instance:qa.netiq.tests.PageTest3@3e92efc3]" started-at="2023-03-16T12:40:31 IST" name="AuthenticationManagementTest" finished-at="2023-03-16T12:40:31 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthenticationManagementTest -->
+        <test-method signature="SNMPTest()[pri:5, instance:qa.netiq.tests.PageTest3@3e92efc3]" started-at="2023-03-16T12:40:31 IST" name="SNMPTest" finished-at="2023-03-16T12:40:32 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SNMPTest -->
+        <test-method signature="EBAPageTest()[pri:6, instance:qa.netiq.tests.PageTest3@3e92efc3]" started-at="2023-03-16T12:40:32 IST" name="EBAPageTest" finished-at="2023-03-16T12:40:32 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EBAPageTest -->
+      </class> <!-- qa.netiq.tests.PageTest3 -->
       <class name="qa.netiq.tests.PageTest1">
-        <test-method is-config="true" signature="beforeClassSetUp()[pri:0, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:56:43 IST" name="beforeClassSetUp" finished-at="2023-03-16T11:56:56 IST" duration-ms="12394" status="PASS">
+        <test-method is-config="true" signature="beforeClassSetUp()[pri:0, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:00 IST" name="beforeClassSetUp" finished-at="2023-03-16T12:40:18 IST" duration-ms="17311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClassSetUp -->
-        <test-method signature="homePage()[pri:1, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:56:56 IST" name="homePage" finished-at="2023-03-16T11:56:57 IST" duration-ms="981" status="PASS">
+        <test-method signature="homePage()[pri:1, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:18 IST" name="homePage" finished-at="2023-03-16T12:40:19 IST" duration-ms="752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- homePage -->
-        <test-method signature="searchTest()[pri:2, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:56:57 IST" name="searchTest" finished-at="2023-03-16T11:56:59 IST" duration-ms="2030" status="PASS">
+        <test-method signature="searchTest()[pri:2, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:19 IST" name="searchTest" finished-at="2023-03-16T12:40:20 IST" duration-ms="1478" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchTest -->
-        <test-method signature="userManagementTest()[pri:3, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:56:59 IST" name="userManagementTest" finished-at="2023-03-16T11:57:00 IST" duration-ms="1039" status="PASS">
+        <test-method signature="userManagementTest()[pri:3, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:20 IST" name="userManagementTest" finished-at="2023-03-16T12:40:21 IST" duration-ms="654" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userManagementTest -->
-        <test-method signature="groupManagementTest()[pri:4, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:57:00 IST" name="groupManagementTest" finished-at="2023-03-16T11:57:01 IST" duration-ms="1316" status="PASS">
+        <test-method signature="groupManagementTest()[pri:4, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:21 IST" name="groupManagementTest" finished-at="2023-03-16T12:40:22 IST" duration-ms="1047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- groupManagementTest -->
-        <test-method signature="objectManagementTest()[pri:5, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:57:01 IST" name="objectManagementTest" finished-at="2023-03-16T11:57:03 IST" duration-ms="1668" status="PASS">
+        <test-method signature="objectManagementTest()[pri:5, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:22 IST" name="objectManagementTest" finished-at="2023-03-16T12:40:23 IST" duration-ms="1382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- objectManagementTest -->
-        <test-method signature="rightManagementTest()[pri:6, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:57:03 IST" name="rightManagementTest" finished-at="2023-03-16T11:57:04 IST" duration-ms="835" status="PASS">
+        <test-method signature="rightManagementTest()[pri:6, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:23 IST" name="rightManagementTest" finished-at="2023-03-16T12:40:24 IST" duration-ms="679" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- rightManagementTest -->
-        <test-method signature="treeViewTest()[pri:7, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:57:04 IST" name="treeViewTest" finished-at="2023-03-16T11:57:05 IST" duration-ms="1373" status="PASS">
+        <test-method signature="treeViewTest()[pri:7, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:24 IST" name="treeViewTest" finished-at="2023-03-16T12:40:25 IST" duration-ms="1159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- treeViewTest -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:qa.netiq.tests.PageTest1@2e4b8173]" started-at="2023-03-16T11:57:11 IST" name="logout" finished-at="2023-03-16T11:57:14 IST" duration-ms="3166" status="PASS">
+        <test-method is-config="true" signature="logout()[pri:0, instance:qa.netiq.tests.PageTest1@3d680b5a]" started-at="2023-03-16T12:40:32 IST" name="logout" finished-at="2023-03-16T12:40:35 IST" duration-ms="3228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
       </class> <!-- qa.netiq.tests.PageTest1 -->
       <class name="qa.netiq.tests.PageTest2">
-        <test-method signature="schemaPageTest()[pri:1, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:05 IST" name="schemaPageTest" finished-at="2023-03-16T11:57:06 IST" duration-ms="807" status="PASS">
+        <test-method signature="schemaPageTest()[pri:1, instance:qa.netiq.tests.PageTest2@703580bf]" started-at="2023-03-16T12:40:25 IST" name="schemaPageTest" finished-at="2023-03-16T12:40:26 IST" duration-ms="1368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- schemaPageTest -->
-        <test-method signature="auditingPageTest()[pri:2, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:06 IST" name="auditingPageTest" finished-at="2023-03-16T11:57:06 IST" duration-ms="362" status="PASS">
+        <test-method signature="auditingPageTest()[pri:2, instance:qa.netiq.tests.PageTest2@703580bf]" started-at="2023-03-16T12:40:26 IST" name="auditingPageTest" finished-at="2023-03-16T12:40:27 IST" duration-ms="579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- auditingPageTest -->
-        <test-method signature="encryptedAttributesPageTest()[pri:3, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:06 IST" name="encryptedAttributesPageTest" finished-at="2023-03-16T11:57:07 IST" duration-ms="552" status="PASS">
+        <test-method signature="encryptedAttributesPageTest()[pri:3, instance:qa.netiq.tests.PageTest2@703580bf]" started-at="2023-03-16T12:40:27 IST" name="encryptedAttributesPageTest" finished-at="2023-03-16T12:40:28 IST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- encryptedAttributesPageTest -->
-        <test-method signature="encryptedReplicationPageTest()[pri:4, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:07 IST" name="encryptedReplicationPageTest" finished-at="2023-03-16T11:57:07 IST" duration-ms="389" status="PASS">
+        <test-method signature="encryptedReplicationPageTest()[pri:4, instance:qa.netiq.tests.PageTest2@703580bf]" started-at="2023-03-16T12:40:28 IST" name="encryptedReplicationPageTest" finished-at="2023-03-16T12:40:28 IST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- encryptedReplicationPageTest -->
-        <test-method signature="dnManagementPageTest()[pri:5, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:07 IST" name="dnManagementPageTest" finished-at="2023-03-16T11:57:08 IST" duration-ms="343" status="PASS">
+        <test-method signature="dnManagementPageTest()[pri:5, instance:qa.netiq.tests.PageTest2@703580bf]" started-at="2023-03-16T12:40:28 IST" name="dnManagementPageTest" finished-at="2023-03-16T12:40:29 IST" duration-ms="403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dnManagementPageTest -->
-        <test-method signature="partitionManagementTest()[pri:6, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:08 IST" name="partitionManagementTest" finished-at="2023-03-16T11:57:08 IST" duration-ms="429" status="PASS">
+        <test-method signature="partitionManagementTest()[pri:6, instance:qa.netiq.tests.PageTest2@703580bf]" started-at="2023-03-16T12:40:29 IST" name="partitionManagementTest" finished-at="2023-03-16T12:40:29 IST" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- partitionManagementTest -->
-        <test-method signature="IndexManagementTest()[pri:7, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:08 IST" name="IndexManagementTest" finished-at="2023-03-16T11:57:09 IST" duration-ms="479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IndexManagementTest -->
-        <test-method signature="LDAPConfigurationTest()[pri:8, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:09 IST" name="LDAPConfigurationTest" finished-at="2023-03-16T11:57:09 IST" duration-ms="859" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LDAPConfigurationTest -->
-        <test-method signature="CertificateManagementTest()[pri:9, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:09 IST" name="CertificateManagementTest" finished-at="2023-03-16T11:57:10 IST" duration-ms="874" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CertificateManagementTest -->
-        <test-method signature="AuthenticationManagementTest()[pri:10, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:10 IST" name="AuthenticationManagementTest" finished-at="2023-03-16T11:57:11 IST" duration-ms="321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AuthenticationManagementTest -->
-        <test-method signature="SNMPTest()[pri:11, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:11 IST" name="SNMPTest" finished-at="2023-03-16T11:57:11 IST" duration-ms="289" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SNMPTest -->
-        <test-method signature="EBAPageTest()[pri:12, instance:qa.netiq.tests.PageTest2@10e41621]" started-at="2023-03-16T11:57:11 IST" name="EBAPageTest" finished-at="2023-03-16T11:57:11 IST" duration-ms="314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EBAPageTest -->
       </class> <!-- qa.netiq.tests.PageTest2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- tiles -->
+  </suite> <!-- Netiq -->
 </testng-results>

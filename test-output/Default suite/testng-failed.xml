@@ -5,11 +5,29 @@
     <classes>
       <class name="qa.netiq.tests.PageTest2">
         <methods>
+          <include name="partitionManagementTest"/>
+          <include name="schemaPageTest"/>
           <include name="beforeClassSetUp"/>
+          <include name="encryptedAttributesPageTest"/>
           <include name="logout"/>
+          <include name="auditingPageTest"/>
+          <include name="dnManagementPageTest"/>
           <include name="encryptedReplicationPageTest"/>
         </methods>
       </class> <!-- qa.netiq.tests.PageTest2 -->
+      <class name="qa.netiq.tests.PageTest1">
+        <methods>
+          <include name="beforeClassSetUp"/>
+          <include name="homePage"/>
+          <include name="searchTest"/>
+          <include name="logout"/>
+          <include name="userManagementTest"/>
+          <include name="groupManagementTest"/>
+          <include name="objectManagementTest"/>
+          <include name="rightManagementTest"/>
+          <include name="treeViewTest"/>
+        </methods>
+      </class> <!-- qa.netiq.tests.PageTest1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

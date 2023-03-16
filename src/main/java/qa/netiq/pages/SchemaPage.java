@@ -7,7 +7,6 @@ import com.microsoft.playwright.options.AriaRole;
 import qa.netiq.base.BaseTest;
 
 public class SchemaPage extends BaseTest{
-	//private Page page;
 	private String schemaTile = "Schema Management Create, Delete classes and attributes and extend objects";
 	private String headerLoc= "div[class=\"modulelTitle wordWrap\"] h2";
 	private String pageurl=HelperMethods.getPageUrl("#/schemamanagement");

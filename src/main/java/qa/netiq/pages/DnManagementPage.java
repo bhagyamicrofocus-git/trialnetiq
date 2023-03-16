@@ -13,8 +13,6 @@ public class DnManagementPage extends BaseTest {
 	private String headerLoc= "div[class=\"moduleTitle wordWrap\"] h2";
 	private String pageurl=HelperMethods.getPageUrl("#/dnmanagement");
 	private String expectedheader= "DN Management";
-	
-	//private Page page;
 	public DnManagementPage(Page page) {
 		this.page=page;
 		page.click(HelperMethods.homeLoc);

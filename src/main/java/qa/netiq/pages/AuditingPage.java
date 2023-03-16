@@ -9,8 +9,6 @@ import qa.netiq.base.BaseTest;
 
 public class AuditingPage extends BaseTest {
 	
-	//private Page page;
-	
 	private String auditTile = "Auditing Create, Delete and Manage Audit";
 	private String headerLoc= "div[class=\"titleSection\"] h2";
 	private String pageurl=HelperMethods.getPageUrl("#/auditpage");

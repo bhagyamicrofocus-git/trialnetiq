@@ -14,8 +14,6 @@ public class PartitionManagementPage extends BaseTest{
 	private String pageurl=HelperMethods.getPageUrl("#/partitionpage");
 	private String expectedheader= "Partitions";
 	
-	//private Page page;
-	
 	public PartitionManagementPage(Page page) {
 		this.page=page;
 		page.click(HelperMethods.homeLoc);

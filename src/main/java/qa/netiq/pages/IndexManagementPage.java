@@ -14,7 +14,6 @@ public class IndexManagementPage {
 
 	public IndexManagementPage(Page page) {
 		this.page = page;
-//		page.navigate("https://10.71.36.143:9000/identityconsole/#/");
 		page.click(HelperMethods.homeLoc);
 		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
 	}
@@ -22,7 +21,6 @@ public class IndexManagementPage {
 	public void indexManagementPage() {
 		String header = page.textContent(headerLoc);
 		System.out.println(header);
-//		System.out.println(page.title());
 		HelperMethods.validation(header,expectedheader , "header not matched");
 	}
 	public IndexManagementPage indexManagementPageUrl() {

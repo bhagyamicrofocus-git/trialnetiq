@@ -23,7 +23,6 @@ public class PlaywrightFactory {
 		browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
 		BrowserContext browserContext = browser.newContext(new Browser.NewContextOptions().setIgnoreHTTPSErrors(true));
 		page = browserContext.newPage();
-       //return page;
 }
 	
 	

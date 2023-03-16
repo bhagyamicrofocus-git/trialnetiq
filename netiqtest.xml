@@ -1,0 +1,9 @@
+<suite name="Netiq">
+	<test name="tiles">
+		<classes>
+			<class name="qa.netiq.tests.PageTest1"></class>
+			<class name="qa.netiq.tests.PageTest2"></class>
+			<class name="qa.netiq.tests.PageTest3"></class>
+		</classes>
+	</test>
+</suite>

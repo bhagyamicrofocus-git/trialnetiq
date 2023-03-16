@@ -14,7 +14,6 @@ public class EncryptedAttributesPage extends BaseTest {
 	private String pageurl=HelperMethods.getPageUrl("#/encryptedattributes");
 	private String expectedheader= "Encrypted Attributes";
 	
-	//private Page page;
 	public EncryptedAttributesPage(Page page) {
 		this.page=page;
 		page.click(HelperMethods.homeLoc);
