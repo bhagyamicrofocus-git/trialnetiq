@@ -5,13 +5,9 @@
     <classes>
       <class name="qa.netiq.tests.PageTest2">
         <methods>
-          <include name="partitionManagementTest"/>
           <include name="beforeClassSetUp"/>
-          <include name="encryptedAttributesPageTest"/>
           <include name="logout"/>
-          <include name="auditingPageTest"/>
           <include name="dnManagementPageTest"/>
-          <include name="encryptedReplicationPageTest"/>
         </methods>
       </class> <!-- qa.netiq.tests.PageTest2 -->
     </classes>

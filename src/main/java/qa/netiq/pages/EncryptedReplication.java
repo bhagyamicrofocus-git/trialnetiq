@@ -9,30 +9,34 @@ import qa.netiq.base.BaseTest;
 
 public class EncryptedReplication extends BaseTest {
 	
+	private String tile = "Encrypted Replication Enable or Disable Encrypted Replication";
+	private String headerLoc= "div[class=\"pageHeading\"] h2";
+	private String pageurl=HelperMethods.getPageUrl("#/encryptedreplication");
+	private String expectedheader= "Encrypted Replication";
+	
 	//private Page page;
 	public EncryptedReplication(Page page) {
 		this.page=page;
-		page.click("button[title=\"Cancel\"]");
-		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Encrypted Replication Enable or Disable Encrypted Replication")).click();
+		page.click(HelperMethods.homeLoc);
+		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
 		
 	}
 	public EncryptedReplication encryptedReplicationPageTitle() throws InterruptedException {
-		Thread.sleep(2000);
 		   String actualTitle= page.title();
-		   Assert.assertEquals(actualTitle, "Identity Console");
+		   Assert.assertEquals(actualTitle,titlename);
 		   return this;
 		}
 	
 	public EncryptedReplication encryptedReplicationPageUrl() {
 		String actualUrl=page.url();
-		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/#/encryptedreplication");
+		Assert.assertEquals(actualUrl,pageurl);
 		return this;
 	}
 	
 	public void headerReplication() {
-		String header=page.textContent("div[class=\"pageHeading\"] h2");
+		String header=page.textContent(headerLoc);
 		System.out.println(header);
-		Assert.assertEquals(header, "Encrypted Replication");
+		Assert.assertEquals(header, expectedheader);
 	}
 }
 

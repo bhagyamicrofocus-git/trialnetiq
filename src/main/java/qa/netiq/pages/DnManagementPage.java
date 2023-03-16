@@ -9,30 +9,34 @@ import qa.netiq.base.BaseTest;
 
 public class DnManagementPage extends BaseTest {
 	
+	private String tile = "DN Management Move, Rename and Copy of Objects";
+	private String headerLoc= "div[class=\"moduleTitle wordWrap\"] h2";
+	private String pageurl=HelperMethods.getPageUrl("#/dnmanagement");
+	private String expectedheader= "DN Management";
+	
 	//private Page page;
 	public DnManagementPage(Page page) {
 		this.page=page;
-		page.click("button[title=\"Cancel\"]");
-		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("DN Management Move, Rename and Copy of Objects")).click();
+		page.click(HelperMethods.homeLoc);
+		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
 		
 	}
 	public DnManagementPage dnManagementPageTitle() throws InterruptedException {
-		Thread.sleep(2000);
 		   String actualTitle= page.title();
-		   Assert.assertEquals(actualTitle, "Identity Console");
+		   Assert.assertEquals(actualTitle, titlename);
 		   return this;
 		}
 	
 	public DnManagementPage dnManagementPageUrl() {
 		String actualUrl=page.url();
-		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/#/dnmanagement");
+		Assert.assertEquals(actualUrl,pageurl);
 		return this;
 	}
 	
 	public void headerDn() {
-		String header=page.textContent("div[class=\"moduleTitle wordWrap\"] h2");
+		String header=page.textContent(headerLoc);
 		System.out.println(header);
-		Assert.assertEquals(header, "DN Management");
+		Assert.assertEquals(header, expectedheader);
 	}
 }
 

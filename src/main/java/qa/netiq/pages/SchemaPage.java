@@ -5,25 +5,28 @@ import org.testng.Assert;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import qa.netiq.base.BaseTest;
-import qa.netiq.factory.PlaywrightFactory;
 
 public class SchemaPage extends BaseTest{
 	//private Page page;
+	private String schemaTile = "Schema Management Create, Delete classes and attributes and extend objects";
+	private String headerLoc= "div[class=\"modulelTitle wordWrap\"] h2";
+	private String pageurl=HelperMethods.getPageUrl("#/schemamanagement");
+	private String expectedheader= "Schema Management";
+	
 	
 	//constructor
 	public SchemaPage(Page page) throws InterruptedException
 	{
 		this.page=page;
 		page.click(HelperMethods.homeLoc);
-	  	page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Schema Management Create, Delete classes and attributes and extend objects")).click();
-	  	page.waitForURL("https://10.71.36.143:9000/identityconsole/#/schemamanagement");
+	  	page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(schemaTile)).click();
+	  	page.waitForURL(pageurl);
 	}
 	
 	//actions
 	public SchemaPage schemaPageTitle() throws InterruptedException {
-		Thread.sleep(2000);
 		String actualTitle= page.title();
-		Assert.assertEquals(actualTitle, "Identity Console");
+		Assert.assertEquals(actualTitle, titlename); 
 		return this;
 		
 	}
@@ -31,14 +34,14 @@ public class SchemaPage extends BaseTest{
 	public SchemaPage schemaPageUrl() {
 		String actualUrl=page.url();
 		System.out.println(actualUrl);
-		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/#/schemamanagement");
+		Assert.assertEquals(actualUrl,pageurl);
 		return this;
 	}
 	
 	public void headerschema() {
-		String header=page.textContent("div[class=\"modulelTitle wordWrap\"] h2");
+		String header=page.textContent(headerLoc);
 		System.out.println(header);
-		Assert.assertEquals(header, "Schema Management");
+		Assert.assertEquals(header, expectedheader );
 	}
 
 }

@@ -9,31 +9,35 @@ import qa.netiq.base.BaseTest;
 
 public class PartitionManagementPage extends BaseTest{
 	
+	private String tile = "Partition Management Create, Merge and Manage Partitions";
+	private String headerLoc= "div[class=\"floatLeft wordWrap_heading\"] h2";
+	private String pageurl=HelperMethods.getPageUrl("#/partitionpage");
+	private String expectedheader= "Partitions";
+	
 	//private Page page;
 	
 	public PartitionManagementPage(Page page) {
 		this.page=page;
-		page.click("button[title=\"Cancel\"]");
-		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Partition Management Create, Merge and Manage Partitions")).click();
+		page.click(HelperMethods.homeLoc);
+		page.getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName(tile)).click();
 	}
 	
 	public PartitionManagementPage partitionManagementPageTitle() throws InterruptedException {
-		Thread.sleep(2000);
 		   String actualTitle= page.title();
-		   Assert.assertEquals(actualTitle, "Identity Console");
+		   Assert.assertEquals(actualTitle, titlename);
 		   return this;
 		}
 	
 	public PartitionManagementPage partitionManagementPageUrl() {
 		String actualUrl=page.url();
-		Assert.assertEquals(actualUrl,"https://10.71.36.143:9000/identityconsole/#/partitionpage");
+		Assert.assertEquals(actualUrl,pageurl);
 		return this;
 	}
 
 	public void headerPartition() {
-		String header=page.textContent("div[class=\"floatLeft wordWrap_heading\"] h2");
+		String header=page.textContent(headerLoc);
 		System.out.println(header);
-		Assert.assertEquals(header, "Partitions");
+		Assert.assertEquals(header, expectedheader);
 	}
 }
 

@@ -11,21 +11,14 @@ import com.microsoft.playwright.options.AriaRole;
 import qa.netiq.factory.PlaywrightFactory;
 
 public class BaseTest extends PlaywrightFactory {
-//	PlaywrightFactory pf;
-//	protected Page page;
-//	protected HomePage homePage;
-//	protected SchemaPage schemaPage;
 	Properties prop;
+	protected String titlename="Identity Console";
+	
 	
 	@BeforeSuite
 	public void beforeClassSetUp() {
-//		new PlaywrightFactory()
+
 		launch();
-		//page.navigate("https://10.71.36.143:9000/identityconsole/login.html#/");
-		//page.locator("#Username_ID").type("cn=admin,o=novell");
-		//page.locator("#Password_ID").type("novell");
-		//page.locator("#Server").type("10.71.36.143");
-		//page.locator("#loginButton").click();
 		prop=init_prop();
 		page.navigate(prop.getProperty("url"));
 		page.locator("#Username_ID").type(prop.getProperty("username"));
