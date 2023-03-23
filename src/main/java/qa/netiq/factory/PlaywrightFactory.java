@@ -20,7 +20,7 @@ public class PlaywrightFactory {
 
 	public void launch() {
 		Playwright playwright = Playwright.create();
-		browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+		browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(true));
 		BrowserContext browserContext = browser.newContext(new Browser.NewContextOptions().setIgnoreHTTPSErrors(true));
 		page = browserContext.newPage();
 }
