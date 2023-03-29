@@ -5,6 +5,7 @@ pipeline
     tools{
     	maven 'maven'
         }
+        
         stage("Deploy to QA"){
             steps{
                 echo("deploy to qa")
@@ -20,5 +21,4 @@ pipeline
                 }
             }
         }
-    }
 }
